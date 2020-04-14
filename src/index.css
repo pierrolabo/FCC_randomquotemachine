@@ -1,13 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Bellota&display=swap');
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+}
+.App {
+  background: #004d40;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 12px;
+  min-height: 100vh;
+  font-family: 'Bellota', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.quoteContainer {
+  display: flex;
+  min-height: 22vh;
+  width: 55vh;
+  background: white;
+  color: black;
+  border-radius: 5px;
+  opacity: 0.9;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.quoteContainer .quoteCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  padding: 22px 42px;
+}
+.quoteCard .quoteCard-author {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding: 12px;
+  font-size: 18px;
+}
+.quoteCard .buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.quoteCard .buttons a {
+  margin-left: 12px;
+}
+.quoteCard button {
+  background: #26a69a;
+  border-radius: 5px;
+  border-color: #26a69a;
+  color: #b2dfdb;
+}
+.quoteCard button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.quoteCard i {
+  color: #26a69a;
+}
+
+.quoteCard .quoteCard-text {
+  font-size: 28px;
 }
